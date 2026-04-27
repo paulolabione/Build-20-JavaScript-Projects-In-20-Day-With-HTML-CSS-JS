@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.title-h1 {
+  background-color: lightseagreen;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 5px 50px;
+  border-radius: 50%;
+  border: 1px dashed black;
+  box-shadow: 0 0 15px;
+}
+
+.fake-body {
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #2e19ff;
+}
+
+.squares {
+  border: 100px solid #810044;
+  position: fixed;
+  transform: translate(-50%, -50%) rotate(0deg);
+  animation: 20s ease-in-out infinite;
+}

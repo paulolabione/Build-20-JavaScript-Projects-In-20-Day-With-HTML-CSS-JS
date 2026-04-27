@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#titleh1 {
+    background-color: lightblue;
+    margin: 0 auto 30px;
+    padding: 5px 50px;
+    border: 2px dashed #333;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+body {
+    /* width: 100%; */
+    height: 100vh;
+    background: repeating-linear-gradient(
+        0deg, 
+        #fff 0%,
+        #fff 50%,
+        #000 50%,
+        #000 100%
+    ), 
+    repeating-linear-gradient(
+        90deg,
+        #aaa 0%,
+        red 50%, 
+        red 50%, 
+        #555 100%);
+    background-size: 30px 30px;
+    background-blend-mode: difference;
+    cursor: grab;
+}
+
+span {
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: #333;
+    pointer-events: none;
+    border-radius: 50%;
+    background: url("https://images.pexels.com/photos/31025743/pexels-photo-31025743.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+

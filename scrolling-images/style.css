@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.title-h1 {
+    background-color: lightseagreen;
+    width: fit-content;
+    margin: 10px auto;
+    padding: 5px 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.95);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.fake-body {
+    background-color: lightblue;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    color: white;
+    background:url('https://cdn.pixabay.com/photo/2014/04/10/11/24/rose-320868_1280.jpg');
+    background-size: cover;
+    border-radius: 5px;
+    width: 600px;
+    height: 250px;
+    padding: 1rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    transition: all 2s ease;
+    margin: 1rem;
+    /* color: black; */
+}
+
+h2 {
+    margin: 1rem;
+}
+
+.card:nth-child(even) {
+    transform: translate(200px) rotate(-90deg) scale(0.01);
+}
+
+.card:nth-child(odd) {
+    transform: translate(-200px) rotate(90deg) scale(0.01);
+}
+
+/* .card {
+    transform: translate(-200px) rotate(90deg) scale(0.1);
+} */
+
+.card.slidingIn {
+    transform: translate(30px) rotate(0deg) scale(1);
+}
